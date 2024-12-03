@@ -1,6 +1,3 @@
-package day2
-
-import SolutionInterface
 import java.io.File
 import kotlin.math.abs
 

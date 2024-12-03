@@ -1,6 +1,4 @@
 import java.io.File
-import day1.Day1Class
-import day2.Day2Class
 
 
 fun openFile(fileLocation: String): File {
@@ -11,6 +9,7 @@ fun createClassInstance(day: Int, dataFile: File): SolutionInterface {
     return when (day) {
         1 -> Day1Class(dataFile)
         2 -> Day2Class(dataFile)
+        3 -> Day3Class(dataFile)
         else -> throw IllegalArgumentException("Day number $day Class is not yet implemented")
     }
 }
