@@ -10,6 +10,7 @@ fun createClassInstance(day: Int, dataFile: File): SolutionInterface {
         1 -> Day1Class(dataFile)
         2 -> Day2Class(dataFile)
         3 -> Day3Class(dataFile)
+        4 -> Day4Class(dataFile)
         else -> throw IllegalArgumentException("Day number $day Class is not yet implemented")
     }
 }

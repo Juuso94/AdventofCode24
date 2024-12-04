@@ -23,14 +23,6 @@ class Day3Class(override val dataFile: File): SolutionInterface {
         }.reduce { acc, i ->  acc + i}.toString()
     }
 
-    private fun findSolution(assigmentString: String, unallowedSegments: MutableList<Pair<Int, Int>>): String {
-        val regexMatch = mulRegex.findAll(assigmentString)
-
-        return regexMatch.map {
-            stringMatch -> parseRegex(stringMatch.value)
-        }.reduce { acc, i ->  acc + i}.toString()
-    }
-
     override fun solveFirst(): String {
 
         val assignmentString = readFileToString()
